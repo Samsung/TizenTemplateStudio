@@ -1,0 +1,33 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": [ "Tizen", "Watch" ],
+  "name": "View List",
+  "shortName": "View List",
+  "groupIdentity": "Watch.Page.ViewList",
+  "identity": "Watch.Page.ViewList",
+  "description": "A page that displays a collection of data consisting of view in a vertical list.",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "page",
+    "wts.projecttype": "Application|WatchFace|Widget",
+    "wts.frontendframework": "CodeBehind",
+    "wts.backendframework": "all",
+    "wts.platform": "Watch",
+    "wts.group": "Lists",
+    "wts.version": "1.0.0",
+    "wts.displayOrder": "4",
+    "wts.genGroup": "0",
+    "wts.dependencies": "Watch.Feature.SampleData",
+    "wts.rightClickEnabled": "true",
+    "watch.flyoutitem": "true"
+  },
+  "sourceName": "WatchItemName",
+  "symbols": {
+    "wts.rootNamespace": {
+      "type": "parameter",
+      "replaces": "Param_RootNamespace"
+    }
+  }
+}

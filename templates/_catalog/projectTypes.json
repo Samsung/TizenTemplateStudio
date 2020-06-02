@@ -1,0 +1,42 @@
+﻿[
+  {
+    "name": "Application",
+    "displayName": "Application",
+    "summary": "A graphical user interface which allows the user to interact with the application.",
+    "author": "Samsung Electronics",
+    "order": "1",
+    "licenses": "",
+    "platforms": [ "Watch", "TV", "FHUB" ],
+    "languages": [ "C#" ]
+  },
+  {
+    "name": "WatchFace",
+    "displayName": "Watch Face",
+    "summary": "A watch face with the current time as its user interface.",
+    "author": "Samsung Electronics",
+    "order": "2",
+    "licenses": "",
+    "platforms": [ "Watch" ],
+    "languages": [ "C#" ]
+  },
+  {
+    "name": "Widget",
+    "displayName": "Widget",
+    "summary": "A quick view of specific information on homescreen.",
+    "author": "Samsung Electronics",
+    "order": "3",
+    "licenses": "",
+    "platforms": [ "Watch" ],
+    "languages": [ "C#" ]
+  },
+  {
+    "name": "Service",
+    "displayName": "Service",
+    "summary": "An application running in the background without any user interface.",
+    "author": "Samsung Electronics",
+    "order": "4",
+    "licenses": "",
+    "platforms": [ "Watch" ],
+    "languages": [ "C#" ]
+  }
+]

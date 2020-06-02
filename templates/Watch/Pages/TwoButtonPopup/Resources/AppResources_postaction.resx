@@ -1,0 +1,14 @@
+﻿<root>
+<!--^^-->
+<!--{[{-->
+  <data name="WatchItemNamePageShowButtonText" xml:space="preserve">
+    <value>Show Popup</value>
+  </data>
+  <data name="WatchItemNamePagePopupTitle" xml:space="preserve">
+    <value>Popup Title</value>
+  </data>
+  <data name="WatchItemNamePagePopupText" xml:space="preserve">
+    <value>Popup Text</value>
+  </data>
+<!--}]}-->
+</root>

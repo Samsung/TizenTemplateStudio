@@ -1,0 +1,25 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": ["Tizen", "Watch"],
+  "name": "Watch.Comp.Feature.Sensor.Service",
+  "identity": "Watch.Comp.Feature.Sensor.Service",
+  "shortName": "Watch.Comp.Feature.Sensor.Service",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "composition",
+    "wts.platform": "Watch",
+    "wts.version": "1.0.0",
+    "wts.compositionFilter": "groupIdentity == Watch.Feature.Sensor & $projectType == Service"
+  },
+  "preferNameDirectory": true,
+  "PrimaryOutputs": [
+  ],
+  "symbols": {
+    "wts.rootNamespace": {
+      "type": "parameter",
+      "replaces": "Param_RootNamespace"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+﻿<root>
+<!--^^-->
+<!--{[{-->
+  <data name="ExceptionVibrationServiceNotSupported" xml:space="preserve">
+    <value>Vibration is not supported</value>
+  </data>
+  <data name="ExceptionVibrationServicePredefinedNotSupported" xml:space="preserve">
+    <value>Predefined vibration is not supported</value>
+  </data>
+<!--}]}-->
+</root>

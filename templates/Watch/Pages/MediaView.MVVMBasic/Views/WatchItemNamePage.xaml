@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Param_RootNamespace.Views.WatchItemNamePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+    xmlns:viewModels="clr-namespace:Param_RootNamespace.ViewModels">
+    <ContentPage.BindingContext>
+        <viewModels:WatchItemNameViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <c:MediaView>
+            <c:MediaPlayer
+                AutoPlay="True"
+                Source="WatchItemNameSample.mp4"
+                UsesEmbeddingControls="true"
+                BufferingStarted="OnBufferingStarted"
+                BufferingCompleted="OnBufferingCompleted"
+                PlaybackStarted="OnPlaybackStarted"
+                PlaybackPaused="OnPlaybackPaused"
+                PlaybackStopped="OnPlaybackStopped"
+                PlaybackCompleted="OnPlaybackCompleted"/>
+        </c:MediaView>
+    </ContentPage.Content>
+</ContentPage>

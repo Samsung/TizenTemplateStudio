@@ -1,0 +1,32 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": [ "Tizen", "Watch" ],
+  "name": "Always On Analog Watch",
+  "shortName": "Always On Analog Watch",
+  "groupIdentity": "Watch.Page.AnalogWatch.AlwaysOn",
+  "identity": "Watch.Page.AnalogWatch.AlwaysOn",
+  "description": "An analog watch supporting ambient mode.",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "page",
+    "wts.projecttype": "WatchFace",
+    "wts.frontendframework": "CodeBehind",
+    "wts.backendframework": "all",
+    "wts.platform": "Watch",
+    "wts.version": "1.0.0",
+    "wts.displayOrder": "4",
+    "wts.dependencies": "Watch.Feature.AmbientMode",
+    "wts.genGroup": "0",
+    "wts.rightClickEnabled": "true",
+    "watch.flyoutitem": "true"
+  },
+  "sourceName": "WatchItemName",
+  "symbols": {
+    "wts.rootNamespace": {
+      "type": "parameter",
+      "replaces": "Param_RootNamespace"
+    }
+  }
+}

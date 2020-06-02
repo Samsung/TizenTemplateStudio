@@ -1,0 +1,19 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": [ "Tizen", "Watch" ],
+  "name": "Watch.Comp.Feature.SAP.AddMetadata.WatchFace",
+  "identity": "Watch.Comp.Feature.SAP.AddMetadata.WatchFace",
+  "shortName": "Watch.Comp.Feature.SAP.AddMetadata.WatchFace",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "composition",
+    "wts.platform": "Watch",
+    "wts.version": "1.0.0",
+    "wts.compositionFilter": "identity == Watch.Feature.SamsungAccessoryProtocol & $projectType == WatchFace"
+  },
+  "preferNameDirectory": true,
+  "symbols": {
+  }
+}

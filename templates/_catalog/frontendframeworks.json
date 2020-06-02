@@ -1,0 +1,22 @@
+﻿[
+  {
+    "name": "CodeBehind",
+    "displayName": "Code Behind",
+    "summary": "This is the most basic model that handles logic in the code-behind.",
+    "author": "Samsung Electronics",
+    "order": "1",
+    "licenses": "",
+    "platforms": [ "Watch" ],
+    "languages": [ "C#" ]
+  },
+  {
+    "name": "MVVMBasic",
+    "displayName": "MVVM Basic",
+    "summary": "This is a basic Model-View-ViewModel pattern.",
+    "author": "Samsung Electronics",
+    "order": "2",
+    "licenses": "",
+    "platforms": [ "Watch" ],
+    "languages": [ "C#" ]
+  }
+]

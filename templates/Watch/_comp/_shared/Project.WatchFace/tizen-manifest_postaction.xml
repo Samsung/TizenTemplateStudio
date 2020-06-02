@@ -1,0 +1,17 @@
+﻿<!--^^-->
+<!--{[{-->
+    <watch-application
+        appid="com.example.Param_ProjectName"
+        exec="Param_ProjectName.dll"
+        type="dotnet"
+        ambient-support="false">
+        <label>Param_ProjectName</label>
+        <icon>Param_ProjectName.png</icon>
+        <metadata
+            key="http://tizen.org/metadata/prefer_dotnet_aot"
+            value="true" />
+        <splash-screens />
+    </watch-application>
+<!--}]}-->
+    <privileges>
+    </privileges>

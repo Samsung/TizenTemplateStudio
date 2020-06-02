@@ -1,0 +1,22 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": [ "Tizen", "Watch" ],
+  "name": "Watch.Comp.MVVMBasic.Project.AddEventToCommand",
+  "identity": "Watch.Comp.MVVMBasic.Project.AddEventToCommand",
+  "shortName": "Watch.Comp.MVVMBasic.Project.AddEventToCommand",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "composition",
+    "wts.platform": "Watch",
+    "wts.version": "1.0.0",
+    "wts.compositionFilter": "$frontendframework == MVVMBasic & wts.type == project"
+  },
+  "symbols": {
+    "wts.rootNamespace": {
+      "type": "parameter",
+      "replaces": "Param_RootNamespace"
+    }
+  }
+}

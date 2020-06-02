@@ -1,0 +1,32 @@
+﻿[
+  {
+    "name": "tizen40",
+    "displayName": "API Level 4",
+    "summary": "Tizen 4.0",
+    "author": "Samsung Electronics",
+    "order": "1",
+    "licenses": "",
+    "platforms": ["Watch","TV"],
+    "languages": ["C#"]
+  },
+  {
+    "name": "tizen50",
+    "displayName": "API Level 5",
+    "summary": "Tizen 5.0",
+    "author": "Samsung Electronics",
+    "order": "2",
+    "licenses": "",
+    "platforms": ["TV"],
+    "languages": ["C#"]
+  },
+  {
+    "name": "tizen60",
+    "displayName": "API Level 6",
+    "summary": "Tizen 5.5 M2",
+    "author": "Samsung Electronics",
+    "order": "3",
+    "licenses": "",
+    "platforms": ["TV"],
+    "languages": ["C#"]
+  }
+]

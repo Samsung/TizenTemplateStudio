@@ -1,0 +1,8 @@
+﻿<root>
+<!--^^-->
+<!--{[{-->
+  <data name="WatchItemNamePageToastMessage" xml:space="preserve">
+    <value>Toast will disappear in {0} seconds</value>
+  </data>
+<!--}]}-->
+</root>

@@ -1,0 +1,24 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": ["Tizen", "Watch"],
+  "name": "Ambient Mode",
+  "shortName": "Ambient Mode",
+  "groupIdentity": "Watch.Feature.AmbientMode",
+  "identity": "Watch.Feature.AmbientMode",
+  "description": "Show a limited UI and receive the ambient tick to reduce power consumption",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "feature",
+    "wts.projecttype": "WatchFace",
+    "wts.frontendframework": "all",
+    "wts.backendframework": "all",
+    "wts.platform": "Watch",
+    "wts.version": "1.0.0",
+    "wts.displayOrder": "1",
+    "wts.multipleInstance": "false",
+    "wts.genGroup": "0",
+    "wts.rightClickEnabled": "true"
+  }
+}

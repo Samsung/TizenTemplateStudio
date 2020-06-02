@@ -1,0 +1,29 @@
+﻿<!--^^-->
+<!--{[{-->
+    <ui-application
+        appid="com.example.Param_ProjectName"
+        exec="Param_ProjectName.dll"
+        multiple="false"
+        nodisplay="false"
+        taskmanage="true"
+        type="dotnet"
+        launch_mode="single">
+        <label>Param_ProjectName</label>
+        <icon>Param_ProjectName.png</icon>
+        <metadata
+            key="http://tizen.org/metadata/prefer_dotnet_aot"
+            value="true" />
+        <splash-screens>
+          <splash-screen indicator-display="false" orientation="portrait" src="SplashScreen.png" type="img" />
+        </splash-screens>
+    </ui-application>
+<!--}]}-->
+    <privileges>
+    </privileges>
+<!--^^-->
+<!--{[{-->
+    <shortcut-list />
+    <dependencies />
+    <provides-appdefined-privileges />
+<!--}]}-->
+</manifest>

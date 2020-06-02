@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is NOT compatible with Silverlight-->
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+  <Canvas Name="svg3386" Width="24" Height="24" Canvas.Left="0" Canvas.Top="0">
+    <Canvas.RenderTransform>
+      <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources/>
+    <!--Unknown tag: metadata-->
+    <!--Unknown tag: sodipodi:namedview-->
+    <Canvas Name="Master">
+      <Canvas Name="ui_x5F_spec_x5F_header_copy"/>
+      <Canvas Name="g3393">
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3395" Fill="#000000">
+          <Path.Data>
+            <PathGeometry Figures="M22 8l-4-4v3H3v2h15v3L22 8z" FillRule="NonZero"/>
+          </Path.Data>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3397" Fill="#000000">
+          <Path.Data>
+            <PathGeometry Figures="M2 16l4 4v-3h15v-2H6v-3L2 16z" FillRule="NonZero"/>
+          </Path.Data>
+        </Path>
+      </Canvas>
+    </Canvas>
+  </Canvas>
+</Viewbox>

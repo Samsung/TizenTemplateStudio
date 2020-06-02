@@ -1,0 +1,31 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": [ "Tizen", "Watch" ],
+  "name": "Digital Watch",
+  "shortName": "Digital Watch",
+  "groupIdentity": "Watch.Page.DigitalWatch",
+  "identity": "Watch.Page.DigitalWatch.MVVMBasic",
+  "description": "A digital watch.",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "page",
+    "wts.projecttype": "WatchFace",
+    "wts.frontendframework": "MVVMBasic",
+    "wts.backendframework": "all",
+    "wts.platform": "Watch",
+    "wts.version": "1.0.0",
+    "wts.displayOrder": "1",
+    "wts.genGroup": "0",
+    "wts.rightClickEnabled": "true",
+    "watch.flyoutitem": "true"
+  },
+  "sourceName": "WatchItemName",
+  "symbols": {
+    "wts.rootNamespace": {
+      "type": "parameter",
+      "replaces": "Param_RootNamespace"
+    }
+  }
+}

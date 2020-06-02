@@ -1,0 +1,8 @@
+﻿    <ui-application
+<!--^^-->
+<!--{[{-->
+        <metadata
+            key="accessory-services-location"
+            value="/res/xml/accessoryservices.xml" />
+<!--}]}-->
+    </ui-application>

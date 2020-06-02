@@ -1,0 +1,1 @@
+﻿This is an empty template for headless applications

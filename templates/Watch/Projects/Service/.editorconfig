@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# CA1305: Specify IFormatProvider
+dotnet_diagnostic.CA1305.severity = none
+
+# CA1822: Member does not access instance data and can be marked as static (Shared in VisualBasic)
+dotnet_diagnostic.CA1822.severity = none
+
+# CA2007: Consider calling ConfigureAwait on the awaited task
+dotnet_diagnostic.CA2007.severity = none

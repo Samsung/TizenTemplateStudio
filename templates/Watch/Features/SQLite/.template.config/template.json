@@ -1,0 +1,61 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Samsung Electronics",
+    "classifications": ["Tizen", "Watch"],
+    "name": "SQLite",
+    "shortName": "SQLite",
+    "groupIdentity": "Watch.Feature.SQLite",
+    "identity": "Watch.Feature.SQLite",
+    "description": "Use SQLite to store application data",
+    "tags": {
+      "language": "C#",
+      "type": "item",
+      "wts.type": "feature",
+      "wts.projecttype": "all",
+      "wts.frontendframework": "all",
+      "wts.backendframework": "all",
+      "wts.platform": "Watch",
+      "wts.version": "1.0.0",
+      "wts.displayOrder": "1",
+      "wts.multipleInstance": "false",
+      "wts.genGroup": "0",
+      "wts.rightClickEnabled": "true",
+      "wts.licenses": "[sqlite-net-base](https://github.com/praeclarum/sqlite-net/blob/master/LICENSE.txt)|[SQLitePCLRaw.provider.sqlite3.netstandard11](https://github.com/ericsink/SQLitePCL.raw/blob/master/LICENSE.TXT)"
+    },
+    "symbols": {
+      "wts.projectName": {
+        "type": "parameter",
+        "replaces": "Param_ProjectName",
+        "fileRename": "Param_ProjectName"
+      },
+      "wts.rootNamespace": {
+        "type": "parameter",
+        "replaces": "Param_RootNamespace"
+      }
+    },
+    "postActions": [
+      {
+        "description": "Add nuget package",
+        "manualInstructions": [],
+        "actionId": "0B814718-16A3-4F7F-89F1-69C0F9170EAD",
+        "args": {
+          "packageId": "sqlite-net-base",
+          "version": "1.6.292",
+          "projectPath": "Param_ProjectName.csproj"
+        },
+        "continueOnError": true
+      },
+      {
+        "description": "Add nuget package",
+        "manualInstructions": [],
+        "actionId": "0B814718-16A3-4F7F-89F1-69C0F9170EAD",
+        "args": {
+          "packageId": "SQLitePCLRaw.provider.sqlite3.netstandard11",
+          "version": "1.1.14",
+          "projectPath": "Param_ProjectName.csproj"
+        },
+        "continueOnError": true
+      }
+    ]
+  }
+  

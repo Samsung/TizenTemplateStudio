@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.example.tailor.ProjectName"
+    version="1.0.0"
+    api-version="Param_Tizen.Version"
+    xmlns="http://tizen.org/ns/packages">
+    <profile name="wearable" />
+    <privileges>
+    </privileges>
+</manifest>

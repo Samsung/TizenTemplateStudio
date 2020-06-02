@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Param_RootNamespace.Views.WatchItemNamePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModels="clr-namespace:Param_RootNamespace.ViewModels">
+    <ContentPage.BindingContext>
+        <viewModels:WatchItemNameViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout
+                Orientation="Vertical"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Image Source="WatchItemNameTop.png"/>
+                <Label
+                    Text="Tizen .NET provides a rich set of interfaces allowing you to build compelling TV, mobile and wearable(preview) applications which achieve native performance. The programming environment includes the following: .NET Standard API, which implements the .NET Base Class library, allows you to use the well known C# language base class libraries and features, such as collections, threading, file I/O, and LINQ. Xamarin.Forms, which allows you to efficiently build a user interface from standard components in C# or XAML. TizenFX API, which allows you to access platform-specific features not covered by the generic .NET and Xamarin.Forms features, such as system information and status, battery status, sensor date, and account and connectivity services. For the full specification, see the TizenFX API Reference."/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

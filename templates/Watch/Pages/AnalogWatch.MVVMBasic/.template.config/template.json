@@ -1,0 +1,31 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": [ "Tizen", "Watch" ],
+  "name": "Analog Watch",
+  "shortName": "Analog Watch",
+  "groupIdentity": "Watch.Page.AnalogWatch",
+  "identity": "Watch.Page.AnalogWatch.MVVMBasic",
+  "description": "An analog watch.",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "page",
+    "wts.projecttype": "WatchFace",
+    "wts.frontendframework": "MVVMBasic",
+    "wts.backendframework": "all",
+    "wts.platform": "Watch",
+    "wts.version": "1.0.0",
+    "wts.displayOrder": "3",
+    "wts.genGroup": "0",
+    "wts.rightClickEnabled": "true",
+    "watch.flyoutitem": "true"
+  },
+  "sourceName": "WatchItemName",
+  "symbols": {
+    "wts.rootNamespace": {
+      "type": "parameter",
+      "replaces": "Param_RootNamespace"
+    }
+  }
+}

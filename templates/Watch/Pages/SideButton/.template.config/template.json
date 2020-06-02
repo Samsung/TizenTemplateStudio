@@ -1,0 +1,32 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": [ "Tizen", "Watch" ],
+  "name": "Side Button",
+  "shortName": "Side Button",
+  "groupIdentity": "Watch.Page.SideButton",
+  "identity": "Watch.Page.SideButton",
+  "description": "A circle page with side buttons.",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "page",
+    "wts.projecttype": "Application|WatchFace|Widget",
+    "wts.frontendframework": "CodeBehind",
+    "wts.backendframework": "all",
+    "wts.platform": "Watch",
+    "wts.group": "Buttons",
+    "wts.version": "1.0.0",
+    "wts.displayOrder": "3",
+    "wts.genGroup": "0",
+    "wts.rightClickEnabled": "true",
+    "watch.flyoutitem": "true"
+  },
+  "sourceName": "WatchItemName",
+  "symbols": {
+    "wts.rootNamespace": {
+      "type": "parameter",
+      "replaces": "Param_RootNamespace"
+    }
+  }
+}

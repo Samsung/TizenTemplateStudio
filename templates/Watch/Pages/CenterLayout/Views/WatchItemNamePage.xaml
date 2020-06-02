@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Param_RootNamespace.Views.WatchItemNamePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+    xmlns:res="clr-namespace:Param_RootNamespace.Resources">
+    <ContentPage.Content>
+        <StackLayout Margin="0, 40, 0, 30" VerticalOptions="FillAndExpand">
+            <Image Source="WatchItemNameSample.png" />
+            <Label
+                Text="{x:Static res:AppResources.WatchItemNamePageTitle}"
+                HorizontalOptions="CenterAndExpand" />
+            <Button
+                Text="{x:Static res:AppResources.WatchItemNamePageMoveButtonText}"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="OnButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

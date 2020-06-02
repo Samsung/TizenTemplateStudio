@@ -1,0 +1,27 @@
+﻿{
+    "regexs" : [
+      {
+        "name" : "itemEndsWithPage",
+        "pattern" : ".*(?<!page)$"
+      },
+      {
+        "name" : "badFormat",
+        "pattern" : "^((?!\\d)\\w+)$"
+      }
+    ],
+    "reservedNames" : [
+      "Page",
+      "Templated",
+      "Carousel",
+      "Navigation",
+      "Multi",
+      "MasterDetail",
+      "Tabbed",
+      "Circle",
+      "Index",
+      "TwoButton"
+      ],
+    "validateExistingNames": true,
+    "validateDefaultNames": true,
+    "validateEmptyNames": true
+}

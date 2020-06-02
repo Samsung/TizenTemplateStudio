@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:TwoButtonPage
+    x:Class="Param_RootNamespace.Views.WatchItemNamePage"
+    x:Name="sideButtonPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+    xmlns:res="clr-namespace:Param_RootNamespace.Resources"
+    xmlns:viewModels="clr-namespace:Param_RootNamespace.ViewModels">
+    <c:TwoButtonPage.BindingContext>
+        <viewModels:WatchItemNameViewModel/>
+    </c:TwoButtonPage.BindingContext>
+
+    <c:TwoButtonPage.Content>
+        <StackLayout>
+            <Label
+                Text="{x:Static res:AppResources.WatchItemNamePageTitle}"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </c:TwoButtonPage.Content>
+
+    <c:TwoButtonPage.FirstButton>
+        <MenuItem
+            IconImageSource="WatchItemNameCancel.png"
+            Command="{Binding BindingContext.ClickFirstButtonCommand, Source={x:Reference sideButtonPage}}" />
+    </c:TwoButtonPage.FirstButton>
+
+    <c:TwoButtonPage.SecondButton>
+        <MenuItem
+            IconImageSource="WatchItemNameCheck.png"
+            Command="{Binding BindingContext.ClickSecondButtonCommand, Source={x:Reference sideButtonPage}}" />
+    </c:TwoButtonPage.SecondButton>
+</c:TwoButtonPage>

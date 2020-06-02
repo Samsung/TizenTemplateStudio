@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Param_RootNamespace.Views.LocalizationSamplePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ext="clr-namespace:Param_RootNamespace.Extensions">
+
+    <ContentPage.Content>
+        <StackLayout Margin="0, 40, 0, 30" VerticalOptions="FillAndExpand">
+            <!--
+                The value of localized text from Resx resource files is displayed.
+                If SampleText is not found in any resource file, then SampleText is displayed as it is.
+                For more details, see https://developer.samsung.com/tizen/blog/en-us/2020/04/24/managing-strings-for-localization-in-tizen-net-applications.
+            -->
+            <Label
+                Text="{ext:Localizing SampleText}"
+                HorizontalOptions="CenterAndExpand" />
+            <!--
+                If SampleImage.png is not found in any Resx resource file, then SampleImage.png is returned as it is by LocalizingExtension.
+                If an image file that has the same name with the return value exists in the current culture folder such as en_US-All in res/contents directory, then that file is displayed.
+                If not, an image file that has the same name with the return value in res directory is displayed.
+                For more details, see https://developer.samsung.com/tizen/blog/en-us/2020/04/28/managing-images-for-localization-in-tizen-net-applications.
+            -->
+            <Image Source="{ext:Localizing SampleImage.png}" />
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

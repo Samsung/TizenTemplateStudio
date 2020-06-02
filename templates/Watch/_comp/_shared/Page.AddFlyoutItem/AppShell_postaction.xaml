@@ -1,0 +1,10 @@
+﻿<Shell
+<!--^^-->
+<!--{[{-->
+    <FlyoutItem Route="WatchItemName" Title="{x:Static res:AppResources.WatchItemNamePageTitle}">
+        <ShellSection>
+            <ShellContent ContentTemplate="{DataTemplate views:WatchItemNamePage}"/>
+        </ShellSection>
+    </FlyoutItem>
+<!--}]}-->
+</Shell>

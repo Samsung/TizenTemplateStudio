@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Param_RootNamespace.Views.WatchItemNamePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout Padding="40, 40, 40, 40">
+            <StackLayout
+                Orientation="Horizontal"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Button
+                    x:Name="denyButton"
+                    ImageSource="WatchItemNameDeny.png"
+                    Clicked="OnDenyButtonClicked"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"/>
+                <Button
+                    x:Name="confirmButton"
+                    ImageSource="WatchItemNameConfirm.png"
+                    Clicked="OnConfirmButtonClicked"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

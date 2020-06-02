@@ -1,0 +1,33 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": [ "Tizen", "Watch" ],
+  "name": "Switch List",
+  "shortName": "Switch List",
+  "groupIdentity": "Watch.Page.SwitchList",
+  "identity": "Watch.Page.SwitchList",
+  "description": "A page that displays a collection of data consisting of text and switch in a vertical list.",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "page",
+    "wts.projecttype": "Application|WatchFace|Widget",
+    "wts.frontendframework": "CodeBehind",
+    "wts.backendframework": "all",
+    "wts.platform": "Watch",
+    "wts.group": "Lists",
+    "wts.version": "1.0.0",
+    "wts.displayOrder": "2",
+    "wts.genGroup": "0",
+    "wts.dependencies": "Watch.Feature.SampleData",
+    "wts.rightClickEnabled": "true",
+    "watch.flyoutitem": "true"
+  },
+  "sourceName": "WatchItemName",
+  "symbols": {
+    "wts.rootNamespace": {
+      "type": "parameter",
+      "replaces": "Param_RootNamespace"
+    }
+  }
+}

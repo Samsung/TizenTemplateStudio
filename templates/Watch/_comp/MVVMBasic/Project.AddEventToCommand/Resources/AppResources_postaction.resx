@@ -1,0 +1,11 @@
+﻿<root>
+<!--^^-->
+<!--{[{-->
+  <data name="ExceptionEventNotRegister" xml:space="preserve">
+    <value>Can not register the event.</value>
+  </data>
+  <data name="ExceptionEventNotUnregister" xml:space="preserve">
+    <value>Can not unregister the event.</value>
+  </data>
+<!--}]}-->
+</root>

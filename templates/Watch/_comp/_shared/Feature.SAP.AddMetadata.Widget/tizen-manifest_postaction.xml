@@ -1,0 +1,8 @@
+﻿    <widget-application
+<!--^^-->
+<!--{[{-->
+        <metadata
+            key="accessory-services-location"
+            value="/res/xml/accessoryservices.xml" />
+<!--}]}-->
+    </widget-application>

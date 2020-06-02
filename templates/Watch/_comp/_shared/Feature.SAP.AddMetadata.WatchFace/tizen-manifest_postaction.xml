@@ -1,0 +1,8 @@
+﻿    <watch-application
+<!--^^-->
+<!--{[{-->
+        <metadata
+            key="accessory-services-location"
+            value="/res/xml/accessoryservices.xml" />
+<!--}]}-->
+    </watch-application>

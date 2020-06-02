@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.example.tailor.ProjectName"
+    version="1.0.0"
+    api-version="Param_Tizen.Version"
+    xmlns="http://tizen.org/ns/packages">
+    <profile name="wearable" />
+    <service-application
+        appid="com.example.Param_ProjectName"
+        exec="Param_ProjectName.dll"
+        multiple="false"
+        nodisplay="true"
+        taskmanage="false"
+        type="dotnet">
+      <label>Param_ProjectName</label>
+      <icon>Param_ProjectName.png</icon>
+      <metadata
+          key="http://tizen.org/metadata/prefer_dotnet_aot"
+          value="true" />
+    </service-application>
+    <privileges>
+    </privileges>
+</manifest>

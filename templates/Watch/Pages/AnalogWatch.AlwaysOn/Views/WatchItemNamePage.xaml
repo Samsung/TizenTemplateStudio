@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Param_RootNamespace.Views.WatchItemNamePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <AbsoluteLayout BackgroundColor="Black">
+            <Image
+                x:Name="Index"
+                AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                AbsoluteLayout.LayoutFlags="All"
+                Source="WatchItemNameIndex.png" />
+            <Image
+                x:Name="HourHand"
+                AbsoluteLayout.LayoutBounds="165, 0, 30, 360"
+                AbsoluteLayout.LayoutFlags="None"
+                Rotation="{Binding RotationHour}"
+                Source="WatchItemNameHourHand.png" />
+            <Image
+                x:Name="MinuteHand"
+                AbsoluteLayout.LayoutBounds="165, 0, 30, 360"
+                AbsoluteLayout.LayoutFlags="None"
+                Rotation="{Binding RotationMinute}"
+                Source="WatchItemNameMinuteHand.png" />
+            <Image
+                x:Name="SecondHand"
+                IsVisible="{Binding AmbientDisabled}"
+                AbsoluteLayout.LayoutBounds="165, 0, 30, 360"
+                AbsoluteLayout.LayoutFlags="None"
+                Rotation="{Binding RotationSecond}"
+                Source="WatchItemNameSecondHand.png" />
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

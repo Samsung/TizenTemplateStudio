@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Param_RootNamespace.Views.WatchItemNamePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mvvm="clr-namespace:Param_RootNamespace.Mvvm"
+    xmlns:converters="clr-namespace:Param_RootNamespace.Converters"
+    xmlns:viewModels="clr-namespace:Param_RootNamespace.ViewModels">
+    <ContentPage.BindingContext>
+        <viewModels:WatchItemNameViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <converters:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemConverter"/>
+        <converters:ItemTappedEventArgsToItemTappedConverter x:Key="ItemTappedConverter"/>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ListView
+            ItemsSource="{Binding AllColors}">
+            <ListView.Behaviors>
+                <mvvm:EventToCommandBehavior
+                    EventName="ItemSelected"
+                    Command="{Binding SelectedItemCommand}"
+                    Converter="{StaticResource SelectedItemConverter}"/>
+                <mvvm:EventToCommandBehavior
+                    EventName="ItemTapped"
+                    Command="{Binding TappedItemCommand}"
+                    Converter="{StaticResource ItemTappedConverter}"/>
+            </ListView.Behaviors>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell
+                        Text="{Binding Name}"
+                        Detail="{Binding HexCode}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

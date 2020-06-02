@@ -1,0 +1,11 @@
+﻿<Shell
+<!--^^-->
+<!--{[{-->
+    <FlyoutItem Route="WatchItemName" Title="WatchItemName">
+        <ShellSection>
+            <ShellContent ContentTemplate="{DataTemplate views:WatchItemNamePage}"/>
+            <ShellContent ContentTemplate="{DataTemplate views:WatchItemNameSecondPage}"/>
+        </ShellSection>
+    </FlyoutItem>
+<!--}]}-->
+</Shell>

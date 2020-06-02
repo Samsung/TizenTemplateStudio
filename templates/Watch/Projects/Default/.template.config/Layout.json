@@ -1,0 +1,14 @@
+﻿[
+  {
+    "name": "Main",
+    "templateGroupIdentity": "Watch.Page.Blank",
+    "readonly": "false",
+    "projecttype": "Application|Widget"
+  },
+  {
+    "name": "Main",
+    "templateGroupIdentity": "Watch.Page.DigitalWatch",
+    "readonly": "false",
+    "projecttype": "WatchFace"
+  }
+]

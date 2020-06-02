@@ -1,0 +1,6 @@
+﻿    <privileges>
+<!--^^-->
+<!--{[{-->
+        <privilege>http://tizen.org/privilege/location</privilege>
+<!--}]}-->
+    </privileges>

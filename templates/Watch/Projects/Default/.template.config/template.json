@@ -1,0 +1,106 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": [
+    "Tizen",
+    "Watch"
+  ],
+  "name": "Watch.Project.Default",
+  "shortName": "Watch.Project.Default",
+  "identity": "Watch.Project.Default",
+  "description": "",
+  "tags": {
+    "language": "C#",
+    "type": "project",
+    "wts.type": "project",
+    "wts.platform": "Watch",
+    "wts.projecttype": "Application|WatchFace|Widget",
+    "wts.frontendframework": "CodeBehind|MVVMBasic",
+    "wts.backendframework": "tizen40|tizen50|tizen60",
+    "wts.version": "1.0.0",
+    "wts.displayOrder": "1"
+  },
+  "sourceName": "tailor.ProjectName",
+  "preferNameDirectory": true,
+  "PrimaryOutputs": [
+    {
+      "path": "tailor.ProjectName.csproj"
+    }
+  ],
+  "symbols": {
+    "wts.projectName": {
+      "type": "parameter",
+      "replaces": "Param_ProjectName",
+      "fileRename": "Param_ProjectName"
+    },
+    "wts.rootNamespace": {
+      "type": "parameter",
+      "replaces": "Param_RootNamespace"
+    },
+    "wts.homePageName": {
+      "type": "parameter",
+      "replaces": "Param_HomeName"
+    },
+    "wts.wizardVersion": {
+      "type": "parameter",
+      "dataType": "string",
+      "replaces": "Param_Wizard.Version"
+    },
+    "wts.templatesVersion": {
+      "type": "parameter",
+      "dataType": "string",
+      "replaces": "Param_Templates.Version"
+    },
+    "wts.generationProjectType": {
+      "type": "parameter",
+      "replaces": "Param_ProjectType"
+    },
+    "wts.generationFrontEndFramework": {
+      "type": "parameter",
+      "replaces": "Param_Framework"
+    },
+    "wts.generationBackEndFramework": {
+      "type": "parameter",
+      "replaces": "Param_TargetFramework"
+    },
+    "wts.generationPlatform": {
+      "type": "parameter",
+      "replaces": "Param_Platform"
+    },
+    "tizenPlatformVersion": {
+      "type": "generated",
+      "generator": "switch",
+      "datatype": "float",
+      "replaces": "Param_Tizen.Version",
+      "parameters": {
+        "cases": [
+          {
+            "condition": "(wts.generationBackEndFramework == 'tizen60')",
+            "value": "5.5"
+          },
+          {
+            "condition": "(wts.generationBackEndFramework == 'tizen50')",
+            "value": "5"
+          },
+          {
+            "condition": "(wts.generationBackEndFramework == 'tizen40')",
+            "value": "4"
+          }
+        ]
+      }
+    }
+  },
+  "postActions": [
+    {
+      "description": "Add nuget package",
+      "manualInstructions": [],
+      "actionId": "0B814718-16A3-4F7F-89F1-69C0F9170EAD",
+      "args": {
+        "packageId": "Microsoft.CodeAnalysis.FxCopAnalyzers",
+        "version": "2.9.8",
+        "projectPath": "Param_ProjectName.csproj"
+      },
+      "continueOnError": true
+    }
+  ]
+}
