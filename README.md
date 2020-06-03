@@ -1,3 +1,4 @@
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/tizen.Tailor?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=tizen.Tailor)
 [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/Tizen.Tailor?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=tizen.Tailor)
 
 # Tizen Template Studio
