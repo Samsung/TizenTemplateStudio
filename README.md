@@ -1,3 +1,5 @@
+![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/Tizen.Tailor?style=flat-square)
+
 # Tizen Template Studio
 Tizen Template Studio is a Visual Studio 2019 Extension that helps developers create Tizen .NET apps easily and quickly:
  - Makes it easy for developers to create Tizen .NET apps using a wizard-based experience.
