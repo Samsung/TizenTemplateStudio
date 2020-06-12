@@ -9,14 +9,6 @@
         <viewModels:WatchItemNameViewModel/>
     </ContentPage.BindingContext>
 
-    <!--
-        CircleSurfaceEffectBehavior allows CircleDateTimeSelector to be attached to a CircleSurface.
-        For more details see https://samsung.github.io/Tizen.CircularUI/guide/CircleSurfaceEffectBehavior.html
-    -->
-    <ContentPage.Behaviors>
-        <c:CircleSurfaceEffectBehavior/>
-    </ContentPage.Behaviors>
-
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand">
             <c:CircleDateTimeSelector VerticalOptions="CenterAndExpand"/>

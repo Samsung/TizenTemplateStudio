@@ -75,9 +75,8 @@ namespace Param_RootNamespace.Services
 
                 if (_vibratorTimer != null)
                 {
-                    _vibratorTimer.Stop();
                     _vibratorTimer.Elapsed -= OnTimedEvent;
-                    _vibratorTimer.IsValid = false;
+                    _vibratorTimer.Stop();
                     _vibratorTimer.Dispose();
                 }
             }
@@ -159,9 +158,7 @@ namespace Param_RootNamespace.Services
                     Intensities = (int[])intensities.Clone(),
                     Repeat = repeat,
                     CurrentIndex = 1,
-                    IsValid = true,
-                    AutoReset = false,
-                    Enabled = true,
+                    AutoReset = false
                 };
                 _vibratorTimer.Elapsed += OnTimedEvent;
                 _vibratorTimer.Start();
@@ -204,9 +201,8 @@ namespace Param_RootNamespace.Services
                 _vibrator.Stop();
                 if (_vibratorTimer != null)
                 {
-                    _vibratorTimer.Stop();
-                    _vibratorTimer.IsValid = false;
                     _vibratorTimer.Elapsed -= OnTimedEvent;
+                    _vibratorTimer.Stop();
                     _vibratorTimer.Dispose();
                     _vibratorTimer = null;
                 }
@@ -230,10 +226,6 @@ namespace Param_RootNamespace.Services
         private void OnTimedEvent(object source, ElapsedEventArgs e)
         {
             VibratorTimer timer = (VibratorTimer)source;
-            if (!timer.IsValid)
-            {
-                return;
-            }
 
             int index = timer.CurrentIndex;
             if (index == timer.Durations.Length && timer.Repeat >= 0)
@@ -277,11 +269,6 @@ namespace Param_RootNamespace.Services
             /// Gets or sets the index at which to vibrate.
             /// </summary>
             public int CurrentIndex { get; set; }
-
-            /// <summary>
-            /// Gets or sets a value indicating whether the event handler for the Elapsed event to ignore subsequent events.
-            /// </summary>
-            public bool IsValid { get; set; }
         }
     }
 }
