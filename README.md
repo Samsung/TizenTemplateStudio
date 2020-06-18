@@ -16,6 +16,11 @@ Templates are designed to help you write apps optimized for Galaxy Watch using X
 
 ![TizenTemplateStudio3](https://user-images.githubusercontent.com/44826697/83482954-7b807d00-a4dc-11ea-94a5-920077dad8b6.png)
 
+## Documentation
+
+- [Announcing Tizen Template Studio](https://developer.samsung.com/tizen/blog/en-us/2020/06/12/announcing-tizen-template-studio)
+- [Meet Tizen Template Studio](./docs/overview.md.md)
+
 ## License
 This project is a fork of [Windows Template Studio](https://github.com/microsoft/WindowsTemplateStudio) to support creating Tizen .NET apps.
 
