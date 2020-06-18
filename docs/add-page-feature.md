@@ -31,5 +31,7 @@ Feature name cannot be changed.
 You cannot add feature already added to your project.
 ![add-feature-popup](add-page-feature08.png)
 
-#### [Meet Tizen Template Studio](overview.md)
-#### [Pages and Features](page-feature-list.md)
+---
+
+- [Meet Tizen Template Studio](overview.md)
+- [Pages and Features](page-feature-list.md)
