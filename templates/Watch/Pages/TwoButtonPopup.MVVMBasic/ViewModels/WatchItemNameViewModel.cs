@@ -11,12 +11,12 @@ namespace Param_RootNamespace.ViewModels
 {
     public partial class WatchItemNameViewModel : BaseViewModel
     {
-        public ICommand ShowTwoButtonPopupCommand { get; private set; }
-
         public WatchItemNameViewModel()
         {
             ShowTwoButtonPopupCommand = new Command(() => ShowTwoButtonPopup());
         }
+
+        public ICommand ShowTwoButtonPopupCommand { get; private set; }
 
         // TwoButtonPopup contains two buttons located at both ends.
         // The two buttons only display Icon.

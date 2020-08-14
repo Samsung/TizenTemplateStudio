@@ -12,36 +12,34 @@ namespace Param_RootNamespace.ViewModels
 {
     public class WatchItemNameViewModel : BaseViewModel
     {
-        public IEnumerable<SampleColor> AllColors => SampleDataService.AllColors();
+        public WatchItemNameViewModel()
+        {
+            SelectedItemCommand = new Command<SampleColor>(SelectedItem);
+            TappedItemCommand = new Command<SampleColor>(TappedItem);
+        }
 
         public ICommand SelectedItemCommand { get; private set; }
         public ICommand TappedItemCommand { get; private set; }
 
-        public WatchItemNameViewModel()
-        {
-            SelectedItemCommand = new Command<SampleColor>((o) => SelectedItem(o));
-            TappedItemCommand = new Command<SampleColor>((o) => TappedItem(o));
-        }
+        public IEnumerable<SampleColor> AllColors => SampleDataService.AllColors();
 
         // Called once when an item is selected.
-        private void SelectedItem(object value)
+        private void SelectedItem(SampleColor color)
         {
             // TODO: Insert code to handle a list item selected command.
-            // var selectedValue = value as SampleColor;
-            // if (selectedValue != null)
+            // if (color != null)
             // {
-            //     Logger.Info($"Selected Item : {selectedValue.Name}");
+            //     Logger.Info($"Selected Item : {color.Name}");
             // }
         }
 
         // Called every time an item is tapped.
-        private void TappedItem(object value)
+        private void TappedItem(SampleColor color)
         {
             // TODO: Insert code to handle a list item tapped command.
-            // var tappedValue = value as SampleColor;
-            // if (tappedValue != null)
+            // if (color != null)
             // {
-            //     Logger.Info($"Tapped Item : {tappedValue.Name}");
+            //     Logger.Info($"Tapped Item : {color.Name}");
             // }
         }
     }

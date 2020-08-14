@@ -11,12 +11,12 @@ namespace Param_RootNamespace.ViewModels
 {
     public partial class WatchItemNameViewModel : BaseViewModel
     {
-        public ICommand ShowInformationPopupCommand { get; private set; }
-
         public WatchItemNameViewModel()
         {
             ShowInformationPopupCommand = new Command(() => ShowInformationPopup());
         }
+
+        public ICommand ShowInformationPopupCommand { get; private set; }
 
         // InformationPopup contains a text and a bottom button.
         // Note that if text and icon are set to at the same time on the bottom button, they are overlaid.

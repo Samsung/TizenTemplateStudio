@@ -11,16 +11,16 @@ namespace Param_RootNamespace.ViewModels
 {
     public partial class WatchItemNameViewModel : BaseViewModel
     {
-        public ICommand ClickToastCommand { get; private set; }
-        public ICommand ClickToastWithDelayCommand { get; private set; }
-        public ICommand ClickToastWithIconCommand { get; private set; }
-
         public WatchItemNameViewModel()
         {
             ClickToastCommand = new Command(() => ClickToast());
             ClickToastWithDelayCommand = new Command(() => ClickToastWithDelay());
             ClickToastWithIconCommand = new Command(() => ClickToastWithIcon());
         }
+
+        public ICommand ClickToastCommand { get; private set; }
+        public ICommand ClickToastWithDelayCommand { get; private set; }
+        public ICommand ClickToastWithIconCommand { get; private set; }
 
         // Toast automatically expires after 2 seconds.
         // Users can tap the screen to close a toast before it disappears automatically.

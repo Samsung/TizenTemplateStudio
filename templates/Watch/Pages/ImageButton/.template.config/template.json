@@ -1,0 +1,32 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": [ "Tizen", "Watch" ],
+  "name": "Image Button",
+  "shortName": "Image Button",
+  "groupIdentity": "Watch.Page.ImageButton",
+  "identity": "Watch.Page.ImageButton",
+  "description": "A page that displays image buttons.",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "page",
+    "wts.projecttype": "Application|WatchFace|Widget",
+    "wts.frontendframework": "CodeBehind",
+    "wts.backendframework": "all",
+    "wts.platform": "Watch",
+    "wts.group": "Buttons",
+    "wts.version": "1.0.0",
+    "wts.displayOrder": "4",
+    "wts.genGroup": "0",
+    "wts.rightClickEnabled": "true",
+    "watch.flyoutitem": "true"
+  },
+  "sourceName": "WatchItemName",
+  "symbols": {
+    "wts.rootNamespace": {
+      "type": "parameter",
+      "replaces": "Param_RootNamespace"
+    }
+  }
+}

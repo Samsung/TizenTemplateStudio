@@ -2,6 +2,8 @@
 
 using Xamarin.Forms;
 
+using Tizen.Wearable.CircularUI.Forms;
+
 using Param_RootNamespace.Services;
 
 namespace Param_RootNamespace.Views

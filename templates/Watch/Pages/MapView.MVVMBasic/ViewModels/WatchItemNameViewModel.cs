@@ -10,14 +10,14 @@ namespace Param_RootNamespace.ViewModels
 {
     public partial class WatchItemNameViewModel : BaseViewModel
     {
-        public IMapViewPage MapViewPage { set; get; }
-
-        public ICommand ClickButtonCommand { get; private set; }
-
         public WatchItemNameViewModel()
         {
             ClickButtonCommand = new Command(() => ClickButton());
         }
+
+        public ICommand ClickButtonCommand { get; private set; }
+
+        public IMapViewPage MapViewPage { set; get; }
 
         public void UpdateLocation()
         {

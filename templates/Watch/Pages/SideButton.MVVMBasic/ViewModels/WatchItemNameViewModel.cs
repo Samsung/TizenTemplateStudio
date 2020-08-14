@@ -9,15 +9,14 @@ namespace Param_RootNamespace.ViewModels
 {
     public class WatchItemNameViewModel : BaseViewModel
     {
-        public ICommand ClickFirstButtonCommand { get; private set; }
-        public ICommand ClickSecondButtonCommand { get; private set; }
-
-
         public WatchItemNameViewModel()
         {
             ClickFirstButtonCommand = new Command(() => ClickFirstButton());
             ClickSecondButtonCommand = new Command(() => ClickSecondButton());
         }
+
+        public ICommand ClickFirstButtonCommand { get; private set; }
+        public ICommand ClickSecondButtonCommand { get; private set; }
 
         // When the FirstButton is clicked, the command below is invoked.
         private void ClickFirstButton()

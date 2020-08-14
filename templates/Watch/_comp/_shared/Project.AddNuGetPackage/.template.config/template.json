@@ -29,7 +29,7 @@
       "actionId": "0B814718-16A3-4F7F-89F1-69C0F9170EAD",
       "args": {
         "packageId": "Tizen.Wearable.CircularUI",
-        "version": "1.5.0-pre7",
+        "version": "1.5.0",
         "projectPath": "Param_ProjectName.csproj"
       },
       "continueOnError": true
@@ -40,7 +40,7 @@
       "actionId": "0B814718-16A3-4F7F-89F1-69C0F9170EAD",
       "args": {
         "packageId": "Xamarin.Forms",
-        "version": "4.6.0.800",
+        "version": "4.7.0.968",
         "projectPath": "Param_ProjectName.csproj"
       },
       "continueOnError": true

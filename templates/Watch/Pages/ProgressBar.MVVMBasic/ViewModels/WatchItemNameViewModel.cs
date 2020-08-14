@@ -11,6 +11,13 @@ namespace Param_RootNamespace.ViewModels
     {
         private double _progressBarValue;
 
+        public WatchItemNameViewModel()
+        {
+            ClickPlusButtonCommand = new Command(() => ClickPlusButton());
+            ClickMinusButtonCommand = new Command(() => ClickMinusButton());
+            ProgressBarValue = 0.7;
+        }
+
         public ICommand ClickPlusButtonCommand { get; private set; }
         public ICommand ClickMinusButtonCommand { get; private set; }
 
@@ -24,13 +31,6 @@ namespace Param_RootNamespace.ViewModels
             {
                 return _progressBarValue;
             }
-        }
-
-        public WatchItemNameViewModel()
-        {
-            ClickPlusButtonCommand = new Command(() => ClickPlusButton());
-            ClickMinusButtonCommand = new Command(() => ClickMinusButton());
-            ProgressBarValue = 0.7;
         }
 
         // Called when the plus button is clicked.
