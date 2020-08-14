@@ -9,12 +9,12 @@ namespace Param_RootNamespace.ViewModels
 {
     public class WatchItemNameViewModel : BaseViewModel
     {
-        public ICommand ClickButtonCommand { get; private set; }
-
         public WatchItemNameViewModel()
         {
             ClickButtonCommand = new Command(() => ClickButton());
         }
+
+        public ICommand ClickButtonCommand { get; private set; }
 
         // Called when the button is clicked.
         private void ClickButton()

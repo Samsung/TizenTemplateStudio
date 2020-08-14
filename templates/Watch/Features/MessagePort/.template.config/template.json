@@ -1,0 +1,30 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Samsung Electronics",
+  "classifications": ["Tizen", "Watch"],
+  "name": "Message Port",
+  "shortName": "Message Port",
+  "groupIdentity": "Watch.Feature.MessagePort",
+  "identity": "Watch.Feature.MessagePort",
+  "description": "Communicate with other applications",
+  "tags": {
+    "language": "C#",
+    "type": "item",
+    "wts.type": "feature",
+    "wts.projecttype": "all",
+    "wts.frontendframework": "all",
+    "wts.backendframework": "all",
+    "wts.platform": "Watch",
+    "wts.version": "1.0.0",
+    "wts.displayOrder": "1",
+    "wts.multipleInstance": "false",
+    "wts.genGroup": "0",
+    "wts.rightClickEnabled": "true"
+  },
+  "symbols": {
+    "wts.rootNamespace": {
+      "type": "parameter",
+      "replaces": "Param_RootNamespace"
+    }
+  }
+}

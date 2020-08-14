@@ -9,24 +9,23 @@
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <StackLayout Padding="40, 40, 40, 40">
-            <StackLayout
-                Orientation="Horizontal"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand">
-                <Button
-                    x:Name="denyButton"
-                    ImageSource="WatchItemNameDeny.png"
-                    Command="{Binding ClickDenyButtonCommand}"
-                    HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand" />
-                <Button
-                    x:Name="confirmButton"
-                    ImageSource="WatchItemNameConfirm.png"
-                    Command="{Binding ClickConfirmButtonCommand}"
-                    HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand" />
-            </StackLayout>
+        <StackLayout
+            Padding="40, 40, 40, 40"
+            Orientation="Horizontal"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Button
+                x:Name="denyButton"
+                ImageSource="WatchItemNameDeny.png"
+                Command="{Binding ClickDenyButtonCommand}"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" />
+            <Button
+                x:Name="confirmButton"
+                ImageSource="WatchItemNameConfirm.png"
+                Command="{Binding ClickConfirmButtonCommand}"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

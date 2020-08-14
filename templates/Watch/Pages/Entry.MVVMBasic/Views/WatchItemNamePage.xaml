@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Param_RootNamespace.Views.WatchItemNamePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:res="clr-namespace:Param_RootNamespace.Resources"
+    xmlns:viewModels="clr-namespace:Param_RootNamespace.ViewModels">
+    <ContentPage.BindingContext>
+        <viewModels:WatchItemNameViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout
+                Margin="50, 50, 40, 40"
+                Orientation="Vertical"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Label
+                    Text="{x:Static res:AppResources.WatchItemNamePageTitle}"
+                    HorizontalOptions="CenterAndExpand" />
+                <Entry
+                    x:Name="PhoneNumber"
+                    Placeholder="{x:Static res:AppResources.PhoneNumber}"
+                    Text="{Binding PhoneNumberText}"
+                    ClearButtonVisibility="WhileEditing"
+                    Keyboard="Telephone"
+                    ReturnType="Done" />
+                <Entry
+                    x:Name="Password"
+                    Placeholder="{x:Static res:AppResources.Password}"
+                    Text="{Binding PasswordText}"
+                    IsPassword="True"
+                    ReturnType="Done"
+                    ReturnCommand="{Binding CompleteEntryCommand}" />
+                <Entry
+                    x:Name="HomePage"
+                    Text="{Binding HomePageText}"
+                    BackgroundColor="#2c3e50"
+                    TextColor="Lime"
+                    Keyboard="Url"
+                    ReturnType="Done" />
+                <Entry
+                    x:Name="Comment"
+                    Placeholder="{x:Static res:AppResources.Comment}"
+                    Text="{Binding CommentText}"
+                    MaxLength="15"
+                    ReturnType="Done">
+                    <Entry.Keyboard>
+                        <Keyboard x:FactoryMethod="Create">
+                            <x:Arguments>
+                                <KeyboardFlags>Suggestions,CapitalizeSentence</KeyboardFlags>
+                            </x:Arguments>
+                        </Keyboard>
+                    </Entry.Keyboard>
+                </Entry>
+                <Button
+                    x:Name="BottomButton"
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand"
+                    Text="{x:Static res:AppResources.WatchItemNamePageBottomButtonText}"
+                    Command="{Binding ClickButtonCommand}" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<root>
+<!--^^-->
+<!--{[{-->
+  <data name="WatchItemNamePageTopText" xml:space="preserve">
+    <value>Running</value>
+  </data>
+  <data name="WatchItemNamePageLeftText" xml:space="preserve">
+    <value>Distance</value>
+  </data>
+  <data name="WatchItemNamePageLeftValue" xml:space="preserve">
+    <value>5.75</value>
+  </data>
+  <data name="WatchItemNamePageLeftUnit" xml:space="preserve">
+    <value>km</value>
+  </data>
+  <data name="WatchItemNamePageRightText" xml:space="preserve">
+    <value>Pace</value>
+  </data>
+  <data name="WatchItemNamePageRightValue" xml:space="preserve">
+    <value>6:38</value>
+  </data>
+  <data name="WatchItemNamePageRightUnit" xml:space="preserve">
+    <value>min/km</value>
+  </data>
+  <data name="WatchItemNamePageBottomText" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="WatchItemNamePageBottomValue" xml:space="preserve">
+    <value>00:38:11</value>
+  </data>
+<!--}]}-->
+</root>

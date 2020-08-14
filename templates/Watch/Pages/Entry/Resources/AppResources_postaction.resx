@@ -1,0 +1,17 @@
+﻿<root>
+<!--^^-->
+<!--{[{-->
+  <data name="WatchItemNamePageBottomButtonText" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+<!--}]}-->
+</root>
